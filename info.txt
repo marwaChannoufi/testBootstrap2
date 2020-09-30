@@ -1,0 +1,11 @@
+google font choisi
+
+=========
+{
+font-family: 'Acme', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Rubik', sans-serif;
+font-family: 'Patua One', cursive;
+font-family: 'Sniglet', cursive;
+}

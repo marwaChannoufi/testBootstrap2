@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Lobster|Open+Sans|Patua+One|Rubik|Sniglet&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+header,
+section{
+    overflow-x: hidden;
+}
+:root{
+--Lobster: 'Lobster', cursive;
+--Rubik: 'Rubik', sans-serif;
+--Putua: 'Patua One', cursive;
+--Snigle-font: 'Sniglet', cursive;
+--light-black:#a5a1a1;
+--bggradient:linear-gradient(to bottom, #12c2e9, #c471ed)
+
+}
+
+
+header{
+    background: var(--bggradient);
+}
+header a{
+    font-family: var(--Snigle-font);
+    font-size: 14px;
+    color: #ffff;
+
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background: #ffff;
+    min-width: 160px;
+    box-shadow: 0px 15px 15px 0px rgba(0,0,0,0.2) ;
+    z-index:1
+}
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover{
+    background: #ddd;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+header .nav-item:last-child{
+    padding-right: 160px;
+}
+header .nav-item{
+    padding: 15px;
+}
+header .navbar-brand{
+    padding-left: 130px;
+}
+header .nav-link:hover{
+    color: black;
+}
+header .row .col-md-7{
+    padding: 20vmin 30px;
+    font-family: var(--Rubik);
+    color: white;
+
+}
+header .container .col-md-7 h6{
+    padding:20px;
+    letter-spacing: 4px ;
+}
+header .container .col-md-7 h1{
+    font-size: 30px;
+    font-weight: bold;
+    padding:5px;
+}
+
+header .container .col-md-7 p{
+    padding:10px 20px ;
+}
+header .container .col-md-7 button{
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+header .row .col-md-5{
+    padding: 20px 30px;
+}
+header .row .col-md-5 img{width: 90% ;}
+
+/* section one */
+.section-one{
+    padding: 100px 0;
+}
+.section-one .row .col-md-6  img{
+    opacity: .8;
+    width: 80%;
+    border-radius: 4px;
+}
+.section-one .row .col-md-6:last-child{
+    position: relative;
+}
+.section-one .row .col-md-6 .panel{
+    position :absolute;
+    top:50px;
+    left: -150px;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 100px ;
+    box-shadow: 0 25px 42px rgba(0, 0,0, .2);
+    font-family: var(--Rubik);
+    z-index: 1;
+}
+.section-one .row .col-md-6 .panel h1{
+    font-weight: bold;
+    padding:10px ;
+    font-size:50px ;
+}
+.section-one .row .col-md-6 .panel p{
+    padding: 10px;
+    color: rgba(0,0,0,0.5);
+}
+/* section tow */
+
+.cover{
+    width:100% ;
+    height: 50vh;
+ 
+    background: url("../img/pexels-photo-452738.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.cover .content{
+    background: rgba(0,0,0,.7);
+    height: 100%;
+    width: 100%;
+    padding-top: 60px;
+}
+.cover .content h1{
+    font-family: var(--Patua);
+    color: #fff;
+    font-size: 60px;
+}
+.cover .content p{
+    font-family: var(--Rubik);
+    color: #e5e5e5;
+    font-size: 17px;
+}
+.numbers{
+    margin-top: -75px;
+}
+.numbers .rect{
+    position: relative;
+    z-index: 1;
+    background: white;
+    width: 270px;
+    height: 150px;
+    margin: 16px;
+    border-radius: 8px;
+    box-shadow: 1px 2px 50px 0px rgba(243, 100, 100, 0.5);
+}
+.numbers .rect h1{
+    font-size: 50px;
+    color: rgba(8, 82, 192, 0.5);
+}
+.numbers .rect p{
+    font-family: var(--Putua);
+    text-transform: capitalize;
+}
+.purchase>h1{
+    padding-top: 100px;
+    font-family: var(--Lobster);
+}
+.purchase>p{
+    color:var(--light-black);
+    font-size: 20px;
+    padding:40px 0;
+}
+.purchase .cards .card{
+    width: 30%;
+    margin-left: 2%;
+    box-shadow: 0 25px 25px  rgba(0, 0,0, .2);
+}
+.cards div{
+    margin: 0;
+    padding: 0;
+}
+.card .title{
+     background: rgba(96, 250, 255, 0.2);
+     padding: 10px;
+     /*  */
+ }
+ .card .title h5{
+    font-size: 30px;
+ }
+.card .card-body .card-text{
+     padding: 30px;
+     color: var(--light-black);
+ }
+.card .card-body .pricing{
+    background: rgba(96, 250, 255, 0.2);
+    border-top-left-radius: 500px;
+    border-top-right-radius: 0px;
+ }
+.cards .card .card-body .pricing h1{
+    padding: 20px;
+}
+
+/* section three */
+.section-three{
+    height: 60vh;
+    margin-top: 50px;
+    background: var(--bggradient);
+    background-attachment: fixed;
+}
+.section-three .col-md-12>h1{
+    padding: 30px 0 20px 0;
+    color: seashell;
+}
+.section-three .col-md-12 >p{
+    padding:0 30px;
+    color: seashell;
+    font-size: 17px;
+}
+.section-three .desktop{
+    background: white;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 30px 50px;
+    margin: 10px;
+}
+/* section-4 */
+.section-4{
+    padding: 0 100px;
+}
+.section-4 .container h1{
+    font-size: 40px;
+    padding-top: 100px;
+}
+.section-4 .container p{
+    padding:0 0 100px 0;
+    color: var(--light-black) !important
+}
+.section-4 .carousel-item{
+    padding-left: 40px;
+}
+/* footer */
+footer{
+    background: rgba(0,0,0,0.8);
+    overflow-x: hidden;
+    padding: 100px ;
+}
+footer span{
+    color: rgb(24, 150, 253);
+}
+ footer input{
+     border: none !important;
+ }
+ footer input::placeholder{
+     color: white !important;
+ }
+ footer .input-group .input-group-prepend .input-group-text{
+     background: var(--bggradient) !important;
+     border: none;
+ }
+ footer i{
+     color:rgb(24, 150, 253);
+ }
+ footer i:hover{
+     color: #BD74EC;
+ }
+ footer .column i+i{
+     padding: 10px;
+ }
+
+
+ /* media Query */
+ /* 
+Extra small (xs) devices (portrait phones , less than 576px
+No media query since this is the default in bootstrap
+
+Small (sm) devices (landscape phone, 576px and up)*/
+@media (min-width:576px){
+
+}
+
+/* Medium (md) devices (tablets ,768px and up) */
+@media (min-widht:768px){
+
+}
+
+/* Large (lg) devices {desktops, 992px and up} */
+@media (min-width:992px){
+
+}
+
+
+/* Extra (xl) large devices (large desktop ,1200px and up) */
+@media (min-width:1200px){}
+
